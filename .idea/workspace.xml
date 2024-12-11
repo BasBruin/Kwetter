@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="Created project2">
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/controller/TweetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/model/Tweet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/model/TweetDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/repository/TweetRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/service/TweetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="Added tweets">
+      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/mappers/TweetMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/model/CreateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/publisher/TweetPublisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweet-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/controller/TweetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/controller/TweetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/model/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/model/Tweet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/model/TweetDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/model/TweetDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/service/TweetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/service/TweetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweet-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,28 +55,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AuthenticationServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AuthenticationServiceApplication.executor": "Run",
+    "Spring Boot.TweetServiceApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Spring Boot.AuthenticationServiceApplication">
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.TweetServiceApplication">
     <configuration name="AuthenticationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
         <env name="DATASOURCE_PASSWORD" value="Bl&quot;PK8'^D:TL&quot;|6:" />
@@ -91,12 +93,22 @@
       </method>
     </configuration>
     <configuration name="TweetServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="DATASOURCE_PASSWORD" value="3i;yXQR0S1KtXCKV" />
+        <env name="DATASOURCE_URL" value="jdbc:postgresql://34.77.190.184/tweet" />
+        <env name="DATASOURCE_USERNAME" value="postgres" />
+        <env name="RABBITMQ_URL" value="amqps://fcskojui:8JL2d2fixMtUIxI2vKjnA2uRFP4JsBjg@kangaroo.rmq.cloudamqp.com/fcskojui" />
+      </envs>
       <module name="tweet-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="nl.kwetter2.tweetservice.TweetServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.AuthenticationServiceApplication" />
+      <item itemvalue="Spring Boot.TweetServiceApplication" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -116,7 +128,7 @@
       <updated>1733832152337</updated>
       <workItem from="1733832153459" duration="2689000" />
       <workItem from="1733835463557" duration="1253000" />
-      <workItem from="1733836734444" duration="2841000" />
+      <workItem from="1733836734444" duration="12566000" />
     </task>
     <task id="LOCAL-00001" summary="Created project">
       <option name="closed" value="true" />
@@ -134,7 +146,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733834160782</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added tweets">
+      <option name="closed" value="true" />
+      <created>1733847684410</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733847684410</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added tweets">
+      <option name="closed" value="true" />
+      <created>1733847696036</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733847696036</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +182,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created project" />
     <MESSAGE value="Created project2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created project2" />
+    <MESSAGE value="Added tweets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tweets" />
   </component>
 </project>
