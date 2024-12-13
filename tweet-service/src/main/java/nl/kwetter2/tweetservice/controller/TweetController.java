@@ -23,7 +23,7 @@ public class TweetController {
     }
     private final TweetService tweetService;
     private final TweetRepository tweetRepository;
-    private TweetMapper tweetMapper;
+    private final TweetMapper tweetMapper;
 
     @GetMapping("/all")
     public List<TweetDTO> getAllTweets() {

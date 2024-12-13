@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="Added tweets">
-      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/mappers/TweetMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/model/CreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/publisher/TweetPublisher.java" afterDir="false" />
+    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="Tweets uitgebreid. Connectie niet werkend">
+      <change afterPath="$PROJECT_DIR$/feed-service/src/main/java/nl/kwetter2/feedservice/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feed-service/src/main/java/nl/kwetter2/feedservice/listener/RabbitMQListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweet-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/controller/TweetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/controller/TweetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/model/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/model/Tweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/model/TweetDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/model/TweetDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/publisher/TweetPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/publisher/TweetPublisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/service/TweetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/service/TweetService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweet-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -44,6 +43,12 @@
     &quot;accountId&quot;: &quot;6cb98e92-ca22-43a5-962e-f869ea77f3c0&quot;
   }
 }</component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -58,6 +63,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.tweet-service [clean].executor": "Run",
+    "Maven.tweet-service [install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -74,10 +81,21 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.TweetServiceApplication">
     <configuration name="AuthenticationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
@@ -92,12 +110,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FeedServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="feed-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="nl.kwetter2.feedservice.FeedServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TweetServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
-        <env name="DATASOURCE_PASSWORD" value="3i;yXQR0S1KtXCKV" />
-        <env name="DATASOURCE_URL" value="jdbc:postgresql://34.77.190.184/tweet" />
-        <env name="DATASOURCE_USERNAME" value="postgres" />
-        <env name="RABBITMQ_URL" value="amqps://fcskojui:8JL2d2fixMtUIxI2vKjnA2uRFP4JsBjg@kangaroo.rmq.cloudamqp.com/fcskojui" />
+        <env name="DATASOURCE_USERNAME" value="root" />
+        <env name="DATASOURCE_URL" value="jdbc:mysql://34.88.24.95:3306/bas_tweet" />
+        <env name="DATASOURCE_PASSWORD" value="3WGpVCTMRwhWmxgMqgGN" />
+        <env name="RABBITMQ_PASSWORD" value="EPFGCpd8Xi08lVcXt0tvCZodcfLmgzzZ" />
       </envs>
       <module name="tweet-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="nl.kwetter2.tweetservice.TweetServiceApplication" />
@@ -106,6 +131,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.FeedServiceApplication" />
       <item itemvalue="Spring Boot.AuthenticationServiceApplication" />
       <item itemvalue="Spring Boot.TweetServiceApplication" />
     </list>
@@ -128,7 +154,8 @@
       <updated>1733832152337</updated>
       <workItem from="1733832153459" duration="2689000" />
       <workItem from="1733835463557" duration="1253000" />
-      <workItem from="1733836734444" duration="12566000" />
+      <workItem from="1733836734444" duration="13674000" />
+      <workItem from="1733920581161" duration="5571000" />
     </task>
     <task id="LOCAL-00001" summary="Created project">
       <option name="closed" value="true" />
@@ -162,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733847696036</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tweets uitgebreid. Connectie niet werkend">
+      <option name="closed" value="true" />
+      <created>1733919648673</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733919648673</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +218,7 @@
     <MESSAGE value="Created project" />
     <MESSAGE value="Created project2" />
     <MESSAGE value="Added tweets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tweets" />
+    <MESSAGE value="Tweets uitgebreid. Connectie niet werkend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tweets uitgebreid. Connectie niet werkend" />
   </component>
 </project>
