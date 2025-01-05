@@ -4,16 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="Tweets uitgebreid. Connectie niet werkend">
-      <change afterPath="$PROJECT_DIR$/feed-service/src/main/java/nl/kwetter2/feedservice/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feed-service/src/main/java/nl/kwetter2/feedservice/listener/RabbitMQListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="RabbitMQ begin gemaakt">
+      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/exception/EmailAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/exception/InvalidCredentialsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/model/AuthenticationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/model/AuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/service/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/service/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweet-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweet-service/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/k8s/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/k8s/hpa.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/k8s/service.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/AuthenticationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/AuthenticationServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feed-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed-service/src/main/java/nl/kwetter2/feedservice/listener/RabbitMQListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/feed-service/src/main/java/nl/kwetter2/feedservice/listener/RabbitMQListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/feed-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweet-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/controller/TweetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/controller/TweetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/publisher/TweetPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/publisher/TweetPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/service/TweetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/java/nl/kwetter2/tweetservice/service/TweetService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweet-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Dockerfile" />
         <option value="Class" />
       </list>
     </option>
@@ -43,9 +59,10 @@
     &quot;accountId&quot;: &quot;6cb98e92-ca22-43a5-962e-f869ea77f3c0&quot;
   }
 }</component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
@@ -60,32 +77,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.tweet-service [clean].executor": "Run",
-    "Maven.tweet-service [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AuthenticationServiceApplication.executor": "Run",
-    "Spring Boot.TweetServiceApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.tweet-service/docker-compose.yaml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.tweet-service/docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tweet-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tweet-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AuthenticationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FeedServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TweetServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -96,12 +116,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TweetServiceApplication">
+  <component name="RunManager" selected="Spring Boot.AuthenticationServiceApplication">
     <configuration name="AuthenticationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
-        <env name="DATASOURCE_PASSWORD" value="Bl&quot;PK8'^D:TL&quot;|6:" />
+        <env name="DATASOURCE_PASSWORD" value="QS46s=&gt;`Q|A#mclb" />
         <env name="DATASOURCE_URL" value="jdbc:postgresql://34.77.190.184/auth" />
         <env name="DATASOURCE_USERNAME" value="postgres" />
+        <env name="JWT_SECRET" value="G7RtBxU4fVQx9z7vT1iX0WzQEQBmcCKb" />
         <env name="RABBITMQ_URL" value="amqps://fcskojui:8JL2d2fixMtUIxI2vKjnA2uRFP4JsBjg@kangaroo.rmq.cloudamqp.com/fcskojui" />
       </envs>
       <module name="authentication-service" />
@@ -130,11 +151,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="tweet-service/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="tweet-service/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="tweet-service/docker-compose.yaml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="tweet-service/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.tweet-service/docker-compose.yaml.postgres: Compose Deployment" />
+      <item itemvalue="Docker.tweet-service/docker-compose.yaml: Compose Deployment" />
       <item itemvalue="Spring Boot.FeedServiceApplication" />
       <item itemvalue="Spring Boot.AuthenticationServiceApplication" />
       <item itemvalue="Spring Boot.TweetServiceApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.tweet-service/docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Docker.tweet-service/docker-compose.yaml.postgres: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -155,7 +211,10 @@
       <workItem from="1733832153459" duration="2689000" />
       <workItem from="1733835463557" duration="1253000" />
       <workItem from="1733836734444" duration="13674000" />
-      <workItem from="1733920581161" duration="5571000" />
+      <workItem from="1733920581161" duration="17501000" />
+      <workItem from="1734685518433" duration="4258000" />
+      <workItem from="1735915743107" duration="6234000" />
+      <workItem from="1735923162026" duration="19154000" />
     </task>
     <task id="LOCAL-00001" summary="Created project">
       <option name="closed" value="true" />
@@ -197,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733919648673</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="RabbitMQ begin gemaakt">
+      <option name="closed" value="true" />
+      <created>1734079700499</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734079700500</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +286,7 @@
     <MESSAGE value="Created project2" />
     <MESSAGE value="Added tweets" />
     <MESSAGE value="Tweets uitgebreid. Connectie niet werkend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tweets uitgebreid. Connectie niet werkend" />
+    <MESSAGE value="RabbitMQ begin gemaakt" />
+    <option name="LAST_COMMIT_MESSAGE" value="RabbitMQ begin gemaakt" />
   </component>
 </project>

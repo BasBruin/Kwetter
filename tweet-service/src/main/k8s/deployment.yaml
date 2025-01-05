@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tweet-service
+  labels:
+    app: tweet-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tweet-service
+  template:
+    metadata:
+      labels:
+        app: tweet-service
+    spec:
+      containers:
+        - name: tweet-service
+          image: tweet-service:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8082
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "512Mi"
+            limits:
+              cpu: "500m"
+              memory: "1024Mi"
