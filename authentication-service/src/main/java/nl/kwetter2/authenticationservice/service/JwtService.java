@@ -5,6 +5,8 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
 import nl.kwetter2.authenticationservice.model.User;
 import org.springframework.stereotype.Service;
 
@@ -65,5 +67,26 @@ public class JwtService {
 
     public Boolean validateToken(String token) {
         return !isTokenExpired(token);
+    }
+
+
+
+    public Claims getClaimsFromCookie(HttpServletRequest request) {
+        // Retrieve the access token from the cookies
+        Cookie[] cookies = request.getCookies();
+        for (Cookie cookie : cookies) {
+            if ("accessToken".equals(cookie.getName())) {
+                String token = cookie.getValue();
+
+                // Decode the token to get the claims (make sure to use your signing key)
+                Claims claims = Jwts.parser()
+                        .setSigningKey("your-secret-key")
+                        .parseClaimsJws(token)
+                        .getBody();
+
+                return claims;
+            }
+        }
+        return null;
     }
 }

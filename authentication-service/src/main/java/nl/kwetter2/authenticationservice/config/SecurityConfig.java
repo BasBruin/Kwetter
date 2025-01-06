@@ -33,16 +33,4 @@ public class SecurityConfig {
         return http.build();
     }
 
-//    @Bean
-//    public CorsWebFilter corsFilter() {
-//        CorsConfigurationSource source = request -> {
-//            CorsConfiguration cors = new CorsConfiguration();
-//            cors.addAllowedOrigin("*");
-//            cors.addAllowedMethod("*");
-//            cors.addAllowedHeader("*");
-//            return cors;
-//        };
-//        return new CorsWebFilter(source);
-//    }
-
 }

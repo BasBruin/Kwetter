@@ -4,32 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="RabbitMQ begin gemaakt">
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/exception/EmailAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/exception/InvalidCredentialsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/model/AuthenticationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/model/AuthenticationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/service/AuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/service/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/service/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/k8s/deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/k8s/hpa.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tweet-service/src/main/k8s/service.yaml" afterDir="false" />
+    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="Added JWT and authentication">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/AuthenticationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/AuthenticationServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feed-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feed-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feed-service/src/main/java/nl/kwetter2/feedservice/listener/RabbitMQListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/feed-service/src/main/java/nl/kwetter2/feedservice/listener/RabbitMQListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feed-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/feed-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tweet-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/model/AuthenticationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/model/AuthenticationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/service/JwtService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +194,7 @@
       <workItem from="1733920581161" duration="17501000" />
       <workItem from="1734685518433" duration="4258000" />
       <workItem from="1735915743107" duration="6234000" />
-      <workItem from="1735923162026" duration="19154000" />
+      <workItem from="1735923162026" duration="30627000" />
     </task>
     <task id="LOCAL-00001" summary="Created project">
       <option name="closed" value="true" />
@@ -264,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734079700500</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added JWT and authentication">
+      <option name="closed" value="true" />
+      <created>1736091207476</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736091207476</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +275,7 @@
     <MESSAGE value="Added tweets" />
     <MESSAGE value="Tweets uitgebreid. Connectie niet werkend" />
     <MESSAGE value="RabbitMQ begin gemaakt" />
-    <option name="LAST_COMMIT_MESSAGE" value="RabbitMQ begin gemaakt" />
+    <MESSAGE value="Added JWT and authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added JWT and authentication" />
   </component>
 </project>
