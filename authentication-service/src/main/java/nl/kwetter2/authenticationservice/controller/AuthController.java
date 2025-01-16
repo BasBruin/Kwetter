@@ -53,4 +53,8 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Ongeldige e-mail/wachtwoord combinatie.");
         }
     }
+    @GetMapping("/protected")
+    public ResponseEntity<String> protectedAdmin() {
+        return ResponseEntity.ok("Welcome, Admin! This route is protected.");
+    }
 }

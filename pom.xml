@@ -4,6 +4,10 @@
   <groupId>nl.Kwetter2</groupId>
   <artifactId>Kwetter2</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>Kwetter2</name>
+    <packaging>pom</packaging>
+    <name>Kwetter2</name>
   <url>http://maven.apache.org</url>
+    <modules>
+        <module>api-gateway</module>
+    </modules>
 </project>
