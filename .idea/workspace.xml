@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="Cookies toegevoegd">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/nl/kwetter2/apigateway/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/test/java/nl/kwetter2/authenticationservice/service/AuthenticationServiceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/test/java/nl/kwetter2/authenticationservice/service/CustomUserDetailsServiceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/test/java/nl/kwetter2/authenticationservice/service/JwtServiceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/test/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="Tests toegevoegd">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/cd.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/AuthenticationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/AuthenticationServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/service/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feed-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feed-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feed-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/feed-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +45,9 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -69,39 +59,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.tweet-service/docker-compose.yaml.postgres: Compose Deployment.executor": "Run",
-    "Docker.tweet-service/docker-compose.yaml: Compose Deployment.executor": "Run",
-    "JUnit.AuthenticationServiceTest.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.authentication-service [clean].executor": "Run",
-    "Maven.authentication-service [install].executor": "Run",
-    "Maven.tweet-service [clean].executor": "Run",
-    "Maven.tweet-service [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AuthenticationServiceApplication.executor": "Run",
-    "Spring Boot.FeedServiceApplication.executor": "Run",
-    "Spring Boot.TweetServiceApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/bassi/OneDrive/Bureaublad/Semester 7/Kwetter2/authentication-service/src/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.tweet-service/docker-compose.yaml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.tweet-service/docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuthenticationServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.authentication-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.authentication-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tweet-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tweet-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AuthenticationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FeedServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TweetServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/bassi/OneDrive/Bureaublad/Semester 7/Kwetter2/authentication-service/src/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\bassi\OneDrive\Bureaublad\Semester 7\Kwetter2\authentication-service\src\test" />
@@ -243,7 +233,8 @@
       <workItem from="1735915743107" duration="6234000" />
       <workItem from="1735923162026" duration="36589000" />
       <workItem from="1736252361732" duration="2572000" />
-      <workItem from="1737051671948" duration="8122000" />
+      <workItem from="1737051671948" duration="8881000" />
+      <workItem from="1737101998671" duration="1721000" />
     </task>
     <task id="LOCAL-00001" summary="Created project">
       <option name="closed" value="true" />
@@ -309,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736197682008</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Tests toegevoegd">
+      <option name="closed" value="true" />
+      <created>1737062349447</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737062349447</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +333,7 @@
     <MESSAGE value="RabbitMQ begin gemaakt" />
     <MESSAGE value="Added JWT and authentication" />
     <MESSAGE value="Cookies toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cookies toegevoegd" />
+    <MESSAGE value="Tests toegevoegd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests toegevoegd" />
   </component>
 </project>

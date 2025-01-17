@@ -1,0 +1,27 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-microservices:
+    runs-on: ubuntu-latest
+    continue-on-error: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - id: 'auth'
+        name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: '${{ secrets.GOOGLE_CLOUD_KRINGLOOP2 }}'
+
+      - id: 'build'
+        name: Build to Google Cloud
+        working-directory: .
+        run: gcloud builds submit --project=kringloop2 --region=europe-west1 --ignore-file=.dockerignore --config=cloudbuild.yml

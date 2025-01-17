@@ -45,7 +45,7 @@ public class AuthController {
 
             Cookie accessToken = new Cookie("accessToken", authResponse.getAccessToken());
             accessToken.setHttpOnly(true); // Maakt het ontoegankelijk voor JavaScript
-            accessToken.setMaxAge(60 * 60);
+            accessToken.setMaxAge(60 * 60); // Aanpassing
             response.addCookie(accessToken);
 
             return ResponseEntity.ok().body("Login succesvol");
