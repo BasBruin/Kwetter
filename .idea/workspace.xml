@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="cicd toegevoegd">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/cd.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/test/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="Ci aangepast" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,7 +243,7 @@
       <workItem from="1737101998671" duration="3305000" />
       <workItem from="1737105406263" duration="253000" />
       <workItem from="1737105673149" duration="1891000" />
-      <workItem from="1737368142187" duration="2090000" />
+      <workItem from="1737368142187" duration="2468000" />
     </task>
     <task id="LOCAL-00001" summary="Created project">
       <option name="closed" value="true" />
@@ -330,7 +325,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737103795560</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ci aangepast">
+      <option name="closed" value="true" />
+      <created>1737379417625</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1737379417625</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Ci aangepast">
+      <option name="closed" value="true" />
+      <created>1737379483202</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1737379483202</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +368,8 @@
     <MESSAGE value="Cookies toegevoegd" />
     <MESSAGE value="Tests toegevoegd" />
     <MESSAGE value="cicd toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="cicd toegevoegd" />
+    <MESSAGE value="Ci aangepast" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ci aangepast" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Kwetter2$authenticationservice_in_authentication_service.ic" NAME="authenticationservice in authentication-service Coverage Results" MODIFIED="1737105557982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
