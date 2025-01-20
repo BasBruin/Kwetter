@@ -19,7 +19,7 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          java-version: '17' # Specify the Java version your project uses
+          java-version: '21' # Specify the Java version your project uses
           distribution: 'temurin'
 
       - name: Cache Maven dependencies
@@ -44,7 +44,7 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
 
       - name: Simulate tests
