@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="Ci aangepast2" />
+    <list default="true" id="4fa5b986-2f57-43ba-af7f-73f810d6e241" name="Changes" comment="Ci aangepast2">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/nl/kwetter2/authenticationservice/controller/AuthController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,6 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiGatewayApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-gateway (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="nl.kwetter2.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="nl.kwetter2.apigateway.ApiGatewayApplication" />
@@ -201,6 +213,7 @@
       <item itemvalue="Docker.tweet-service/docker-compose.yaml: Compose Deployment" />
       <item itemvalue="JUnit.authenticationservice in authentication-service" />
       <item itemvalue="JUnit.AuthenticationServiceTest" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication (1)" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.FeedServiceApplication" />
       <item itemvalue="Spring Boot.AuthenticationServiceApplication" />
@@ -243,7 +256,7 @@
       <workItem from="1737101998671" duration="3305000" />
       <workItem from="1737105406263" duration="253000" />
       <workItem from="1737105673149" duration="1891000" />
-      <workItem from="1737368142187" duration="3476000" />
+      <workItem from="1737368142187" duration="9810000" />
     </task>
     <task id="LOCAL-00001" summary="Created project">
       <option name="closed" value="true" />
@@ -357,7 +370,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737380505354</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Ci aangepast2">
+      <option name="closed" value="true" />
+      <created>1737380570837</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1737380570837</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
